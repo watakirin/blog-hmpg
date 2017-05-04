@@ -1,0 +1,150 @@
+body {
+  background-color: #f7f4f2;
+  color: #3b3a3a;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+.mobile {display: none;}
+
+.container {
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #fefbf9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.row {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+header {
+  margin-bottom: 4em;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.profile-icon {
+  width: 88px;
+  margin: 0 auto;
+
+}
+
+.profile-icon img {
+  width: 88px;
+  border-radius: 88px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+.name {
+  font-size: 1.8em;
+  padding: 0;
+  margin-bottom: 4px;
+
+}
+
+.name.furigana {
+  font-size: 1em;
+  margin-top: 4px;
+  margin-bottom: 1em;
+}
+
+.sp-border {
+  border:none;
+  border-top: .5px solid #aaa;
+  height: 1px;
+  margin: 2px 0;
+}
+
+.sp-border.first {
+  position: relative;
+  left:5px;
+}
+
+.sp-border.last {
+  position: relative;
+  right:5px;
+}
+
+.social {
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.social li {
+  list-style-type: none;
+  margin: 14px;
+}
+
+.social li span {font-weight: bold}
+
+footer {
+  border-top: .5px solid #aaa;
+  margin-top: 3em;
+}
+
+@media screen and (max-width:900px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+  .mobile {display: block;}
+
+  .social li {
+    margin: 0;
+    width: 100%;
+    border-top: .5px solid #aaa;
+    position: relative;
+  }
+
+  .social li a::after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+  }
+
+  footer {
+    border: none;
+  }
+
+  .social li:last-child {
+    border-bottom: .5px solid #aaa;
+  }
+  .social li a {
+    display: block;
+    text-decoration: none;
+    line-height: 44px;
+    padding-left: 20px;
+    text-align: left;
+  }
+}
